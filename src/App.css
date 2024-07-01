@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --color-blanco: #ffffff;
+  --color-negro: #000000;
+  --color-azuloscuro: #020535;
+  --color-azul: #173494;
+  --color-azul-1: rgb(42, 189, 238);
+  --color-azul-2: #01204e;
+  --color-fondo-1: #ffffff;
+  --color-fondo-2: #e8e8f7;
+  --sombra: 0px 3px 5px -1px rgba(0, 0, 0, 0.1);
+  --sombra-2: 0px 0px 10px 5px rgba(0, 0, 0, 0.042);
+  --alto-nav: 6vh;
+  --fuente-nav: 2vh;
+  --fuente-uno: 0.8rem;
+  --fuente-dos: 1.5rem;
+  --fuente-tres: 2rem;
+}
+
+* {
+  color: var(--color-azuloscuro);
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-family: "Raleway", sans-serif;
+  background: var(--color-fondo-2);
+}
+*::-webkit-scrollbar {
+  display: none; /* width of the entire scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid orange; /* creates padding around scroll thumb */
+}
+.mostrar {
+  display: flex !important;
+  height: calc(50vh - var(--alto-nav)) !important;
+  z-index: 3 !important;
+  padding-block: 1rem;
+  transition: 0.4s cubic-bezier(0.38, 0.95, 0.88, 0.8) !important;
+}
+
+.lista__productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  margin-inline: auto;
+  padding: 1em;
+  gap: 1em;
+}
+
+
+
+
+
+
+.producto-concreto{
+    background-color: var(--color-fondo-uno);
+}
+.producto-contenido{
+    display: flex;
+    margin: 0 auto;
+    padding: 2rem 0px;
+    width: 80%;
+}
+.producto-imagen{
+    width: 50%;
+    height: 400px;
+}
+.producto-imagen > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+}
+.producto-descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 1rem;
+    width: 100%;
+    gap: 5px;
+}
+.nombre-concreto{
+    font-size: 52px;
+}
+.precio-concreto{
+    font-weight: bold;
+    font-size: 16px;
+}
+.precio-concreto::before{
+    content: "$ ";
+}
+.descripcion-concreta{
+    font-size: 16px;
+}
