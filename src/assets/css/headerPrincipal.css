@@ -35,6 +35,7 @@
   flex-direction: row;
   transition: 0.4s cubic-bezier(0.38, 0.95, 0.88, 0.8);
   height: 0px;
+  box-shadow: var(--sombra);
 }
 .categ__rutas {
   margin: 0;
@@ -77,6 +78,7 @@
   height: var(--alto-nav);
   top: 0px;
   transition: 0.3s cubic-bezier(0.5, 0.53, 0.6, 0.89);
+  
 }
 
 .categ__rutas--item a > p {
