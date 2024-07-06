@@ -1,11 +1,10 @@
-import { React, Component} from "react";
+import { React, Component } from "react";
 import "../assets/css/headerPrincipal.css";
 import "../App.css";
 import "../index.css";
 
 export default class HeaderPrincipal extends Component {
   render() {
-
     window.onload = () => {
       let botonmenu = document.getElementById("menuDisponible");
       botonmenu.onclick = mostrar;
@@ -16,7 +15,6 @@ export default class HeaderPrincipal extends Component {
         if (menu.classList.contains("mostrar")) {
           menu.classList.remove("mostrar");
           this.firstChild.nodeValue = "menu";
-          
         } else {
           menu.classList.add("mostrar");
           this.firstChild.nodeValue = "close";
@@ -32,32 +30,48 @@ export default class HeaderPrincipal extends Component {
             <div className="categ">
               <ul className="categ__rutas">
                 <li className="categ__rutas--item">
-                  <a href="#">
-                    <div></div>
-                    <p>hombre</p>
+                  <a className="btn negro" href="#">
+                    <p>
+                      hombre
+                      <span className="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </p>
                   </a>
                 </li>
                 <li className="categ__rutas--item">
-                  <a href="#">
-                    <div></div>
-                    <p>mujer</p>
+                  <a className="btn negro" href="#">
+                    <p>
+                      mujer
+                      <span className="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </p>
                   </a>
                 </li>
                 <li className="categ__rutas--item">
-                  <a href="#">
-                    <div></div>
-                    <p>niño</p>
+                  <a className="btn negro" href="#">
+                    <p>
+                      niño
+                      <span className="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </p>
                   </a>
                 </li>
                 <li className="categ__rutas--item">
-                  <a href="#">
-                    <div></div>
-                    <p>niña</p>
+                  <a className="btn negro" href="#">
+                    <p>
+                      niña
+                      <span className="material-symbols-outlined">
+                        arrow_forward_ios
+                      </span>
+                    </p>
                   </a>
                 </li>
               </ul>
             </div>
-            <div className="btn blanco navB">
+            <div className="btn negro navB">
               <span id="menuDisponible" className="material-symbols-outlined">
                 menu
               </span>

@@ -22,6 +22,7 @@
 
 .blanco {
   border: 2px solid var(--btn-blanco);
+  color: var(--btn-blanco);
 }
 .blanco:hover {
   background-color: var(--btn-blanco);
@@ -30,6 +31,7 @@
 
 .negro {
   border: 2px solid var(--btn-negro);
+  color: var(--btn-negro);
 }
 .negro:hover {
   background-color: var(--btn-negro);
@@ -38,6 +40,7 @@
 
 .azul {
   border: 2px solid var(--btn-azul);
+  color: var(--btn-azul);
 }
 .azul:hover {
   background-color: var(--btn-azul);
@@ -46,6 +49,7 @@
 
 .azul_2 {
   border: 2px solid var(--btn-azul-2);
+  color: var(--btn-azul-2);
 }
 .azul_2:hover {
   background-color: var(--btn-azul-2);
@@ -54,6 +58,7 @@
 
 .rojo {
   border: 2px solid var(--btn-rojo);
+  color: var(--btn-rojo);
 }
 .rojo:hover {
   background-color: var(--btn-rojo);
@@ -62,6 +67,7 @@
 
 .rojo_2 {
   border: 2px solid var(--btn-rojo-2);
+  color: var(--btn-rojo-2);
 }
 .rojo_2:hover {
   background-color: var(--btn-rojo-2);
@@ -70,6 +76,7 @@
 
 .verde {
   border: 2px solid var(--btn-verde);
+  color: var(--btn-verde);
 }
 .verde:hover {
   background-color: var(--btn-verde);
@@ -78,6 +85,7 @@
 
 .verde_2 {
   border: 2px solid var(--btn-verde-2);
+  color: var(--btn-verde-2);
 }
 .verde_2:hover {
   background-color: var(--btn-verde-2);
