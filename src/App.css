@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
   --color-blanco: #ffffff;
@@ -11,7 +12,7 @@
   --color-fondo-2: #e8e8f7;
   --sombra: 0px 3px 5px -1px rgba(0, 0, 0, 0.1);
   --sombra-2: 0px 0px 10px 5px rgba(0, 0, 0, 0.042);
-  --alto-nav: 9vh;
+  --alto-nav: 6vh;
   --fuente-nav: 2rem;
   --fuente-uno: 0.8rem;
   --fuente-dos: 1.5rem;
@@ -40,6 +41,8 @@ body {
   left: 0;
   right: 0;
   font-family: "Raleway", sans-serif;
+  max-width: 1080px;
+  margin: 0 auto;
 }
 *::-webkit-scrollbar {
   display: none; /* width of the entire scrollbar */
@@ -69,4 +72,12 @@ body {
   margin-inline: auto;
   padding: 1em;
   gap: 1em;
+}
+a{
+  color: var(--color-negro);
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover{
+  text-decoration: underline;
 }

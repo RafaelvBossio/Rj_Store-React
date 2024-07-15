@@ -18,8 +18,9 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  height: calc(var(--alto-nav) + 0.5vh);
+  height: calc(var(--alto-nav) - 1rem);
   width: var(--fuente-tres);
+  cursor: pointer;
 }
 .categ {
   display: flex;
@@ -74,6 +75,7 @@
   grid-area: boton;
   transition: all 1s;
   padding: 0.3em;
+  border: none;
 }
 .navB span {
   font-size: calc(var(--fuente-tres) + .5rem);
