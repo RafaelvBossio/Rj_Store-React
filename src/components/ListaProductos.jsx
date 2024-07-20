@@ -16,7 +16,7 @@ const ListaProductos = () => {
     <div className="contenedor_listaProductos">
       <ul className="lista_productos">
         {data?.map((datos) => (
-          <Producto key={datos.id} dato={datos}/>
+          <Producto key={datos.id} dato={datos} id={dato.id} />
         ))}
       </ul>
     </div>
